@@ -48,3 +48,12 @@ void IMU::fifo_Data(){
     Wire.endTransmission(true);
     }
   }
+
+
+class IMU_Pair{
+  public:
+    IMU* mp1, mp2;
+    IMU_Pair(IMU mx1, IMU mx2){ mp1 = &mx1; mp2 = &mx2;}
+  
+  
+  };
